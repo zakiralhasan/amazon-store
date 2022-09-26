@@ -8,8 +8,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 30px 20px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .order-summary-section{
     background-color: #FFE0B3;
+    padding: 16px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.order-summary-heading{
+    text-align: center;
+    margin-bottom: 40px;
 }

@@ -13,6 +13,7 @@ const Shop = () => {
 
     return (
         <div className='shop-container'>
+
             <div className='card-container'>
                 {
                     products.map(product=><SingleCard 
@@ -21,8 +22,15 @@ const Shop = () => {
                     ></SingleCard>)
                 }
             </div>
+
+
             <div className='order-summary-section'>
-                <h1>Order summary section</h1>
+                <h2 className='order-summary-heading'>Order summary</h2>
+                <p>Selected Items: </p>
+                <p>Total Price: </p>
+                <p>Total Shipping Charge: </p>
+                <p>Tax: </p>
+                <h3>Grand Total: </h3>
             </div>
         </div>
     );
