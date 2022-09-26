@@ -1,0 +1,15 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.card-container{
+    /* background-color: lightblue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 30px 20px;
+    padding-top: 100px;
+}
+.order-summary-section{
+    background-color: #FFE0B3;
+}
