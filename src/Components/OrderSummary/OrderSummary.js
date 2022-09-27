@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import './OrderSummary.css';
 
 const OrderSummary = (props) => {
@@ -24,8 +26,14 @@ const OrderSummary = (props) => {
             <p>Tax: ${tax}</p>
             <h3>Grand Total: ${grandTotal}</h3>
             <div>
-                <button className='clear-cart-btn'>Clear Cart</button>
-                <button className='order-review-btn'>Review Order</button>
+                <button className='clear-cart-btn'>
+                    <p>Clear Cart</p>
+                    <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon>
+                </button>
+                <button className='order-review-btn'>
+                    <p>Review Order</p>
+                    <FontAwesomeIcon className='right-arrow' icon={faArrowRight}></FontAwesomeIcon>
+                </button>
             </div>
         </div>
     );

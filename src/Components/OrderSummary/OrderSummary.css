@@ -16,6 +16,12 @@
     margin-bottom: 16px;
     font-size: medium;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clear-cart-btn p{
+    margin-right: 8px;
 }
 .order-review-btn{
     background-color: #FF9900;
@@ -28,4 +34,13 @@
     margin-bottom: 16px;
     font-size: medium;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-review-btn p{
+    margin-right: 8px;
+}
+.right-arrow{
+    font-size: 20px;
 }
