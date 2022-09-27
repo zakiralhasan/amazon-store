@@ -1,0 +1,31 @@
+
+
+.order-summary-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.clear-cart-btn{
+    background-color: #FF3030;
+    color: white;
+    display: block;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    font-size: medium;
+    cursor: pointer;
+}
+.order-review-btn{
+    background-color: #FF9900;
+    color: white;
+    display: block;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: medium;
+    cursor: pointer;
+}

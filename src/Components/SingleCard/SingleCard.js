@@ -5,6 +5,8 @@ import './SingleCard.css';
 
 const SingleCard = (props) => {
     const {name, img, price, ratings, seller}=props.product;
+    const {handleAddToCarat} = props;
+
     return (
         <div>
             <div className='single-card'>
@@ -15,7 +17,7 @@ const SingleCard = (props) => {
                     <p>Manufacturer: {seller}</p>
                     <p>Ratings: {ratings}</p>
                 </div>
-                <button className='card-btn'>
+                <button className='card-btn' onClick={()=>handleAddToCarat(props.product)}>
                     <p>Add to Cart</p>
                     <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
                 </button>
