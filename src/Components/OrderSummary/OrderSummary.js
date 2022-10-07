@@ -10,12 +10,12 @@ const OrderSummary = (props) => {
     let charge = 0;
 
     for(const product of carts){
-        total= total + product.price;
-        charge = charge + product.shipping;
+        total= parseFloat((total + product.price).toFixed(2));
+        charge = parseFloat((charge + product.shipping).toFixed(2));
     }
 
-    let tax = total*.1;
-    let grandTotal = total + charge + tax;
+    let tax = parseFloat((total*.1).toFixed(2));
+    let grandTotal = parseFloat((total + charge + tax).toFixed(2));
 
     return (
         <div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import OrderSummary from '../OrderSummary/OrderSummary';
 import SingleCard from '../SingleCard/SingleCard';
+import { addToLocalStorage } from '../LocalStorage/LocalStorage';
 import './Shop.css'
 
 const Shop = () => {
@@ -17,6 +18,7 @@ const Shop = () => {
     const handleAddToCarat = (product) =>{
         const newCart = [...cart, product];
         setCart(newCart);
+        addToLocalStorage(product.id);
     }
 
     return (
