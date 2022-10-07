@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import OrderSummary from '../OrderSummary/OrderSummary';
 import SingleCard from '../SingleCard/SingleCard';
 import { addToLocalStorage } from '../LocalStorage/LocalStorage';
 import './Shop.css'
+import { useLoaderData } from 'react-router-dom';
 
 const Shop = () => {
-    const [products, setProducts]=useState([]);
+    const products = useLoaderData();
     const [cart, setCart]=useState([]);
-
-    useEffect(() => {
-        fetch('products.json')
-        .then(res => res.json())
-        .then(data => setProducts(data));
-    },[]);
 
     //this function for handling Add to Cart button.
     const handleAddToCarat = (product) =>{

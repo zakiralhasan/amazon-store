@@ -11,9 +11,12 @@ function App() {
   const router = createBrowserRouter([
     {path:'/', element: <NaveSection/>, children: [
       {path:'/', element: <Shop/>},
-      {path:'home', element: <Shop/>},
+      {path:'home', element: <Shop/>,
+        loader: () => {
+          return fetch('products.json');
+        }},
       {path:'order', element: <Order/>},
-      {path:'about', element: <About/>},
+      {path:'about', element: <About/>,},
       {path:'login', element: <Login/>},
     ]}
   ])
